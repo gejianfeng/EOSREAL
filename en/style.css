@@ -1,0 +1,218 @@
+/* font */
+@font-face {
+	font-family: "Calibri Light";
+	src: url(assets/font/calibril.ttf);
+}
+
+/* global stylesheet */
+body {
+	margin: 0px auto;
+	min-width: 1024px;
+	text-align: center;
+}
+
+.wrap {
+	width: 1024px;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+
+/* banner stylesheet */
+.banner-container {
+	max-width: 1280px;
+	height: 76px;
+	margin: 0px auto;
+}
+
+#banner {
+	height: 76px;
+	background-color: rgb(255, 255, 255);
+	max-width: 1280px;
+	min-width: 1024px;
+	width: 100%;
+	position: relative;
+}
+
+#banner .logo {
+	text-align: left;
+	font-family: "Calibri Light";
+	color: rgb(68, 63, 84);
+	font-size: 42px;
+	top: 5px;
+	left: 0px;
+	position: absolute;
+}
+
+#banner .section-block {
+	text-align: center;
+	font-family: "Calibri Light";
+	color: rgb(68, 63, 84);
+	font-size: 20px;
+	width: 164px;
+	height: 45px;
+	top: 15px;
+	position: absolute;
+	padding-top: 10px;
+	cursor: pointer;
+}
+
+#banner .section-active {
+	background-image: url(assets/image/01/button_pressed.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#banner .event {
+	right: 0px;
+}
+
+#banner .team {
+	right: 160px;
+}
+
+#banner .resources {
+	right: 320px;
+}
+
+#banner .updates {
+	right: 480px;
+}
+
+/* index.php stylesheet */
+#index {
+	height: 859px;
+	position: relative;
+}
+
+#index .bg-wrap {
+	width: 1920px;
+	height: 859px;
+	margin: 0px auto;
+	position: relative;
+	z-index: -1;
+}
+
+#index .background {
+	background-image: url(assets/image/00/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 859px;
+}
+
+#index .content {
+	margin-top: -859px;
+}
+
+#index .logo {
+	background-image: url(assets/image/00/logo_city.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	width: 100%;
+	height: 113px;
+	top: 220px;
+	position: absolute;
+}
+
+#index .sub-title {
+	text-align: center;
+	font-family: "Calibri Light";
+	color: rgb(119, 123, 132);
+	font-size: 36px;
+	width: 100%;
+	top: 365px;
+	position: absolute;
+}
+
+#index .arrow {
+	background-image: url(assets/image/00/arrow.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	width: 100%;
+	height: 54px;
+	top: 510px;
+	position: absolute;
+}
+
+#index .bar {
+	background-image: url(assets/image/00/bar.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	width: 1007px;
+	height: 104px;
+	top: 680px;
+	left: 9px;
+	position: absolute;
+}
+
+#index .bar-button {
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	width: 56px;
+	height: 56px;
+	top: 20px;
+	position: absolute;
+}
+
+#index .email-active {
+	background-image: url(assets/image/00/email_pressed.png);
+	left: 90px;
+}
+
+#index .email-inactive {
+	background-image: url(assets/image/00/email_unpressed.png);
+	left: 90px;
+}
+
+#index .twitter-active {
+	background-image: url(assets/image/00/twitter_pressed.png);
+	left: 280px;
+	cursor: pointer;
+}
+
+#index .twitter-inactive {
+	background-image: url(assets/image/00/twitter_unpressed.png);
+	left: 280px;
+	cursor: pointer;
+}
+
+#index .wechat-active {
+	background-image: url(assets/image/00/weixin_pressed.png);
+	left: 475px;
+	cursor: pointer;
+}
+
+#index .wechat-inactive {
+	background-image: url(assets/image/00/weixin_unpressed.png);
+	left: 475px;
+	cursor: pointer;
+}
+
+#index .weibo-active {
+	background-image: url(assets/image/00/weibo_pressed.png);
+	left: 670px;
+	cursor: pointer;
+}
+
+#index .weibo-inactive {
+	background-image: url(assets/image/00/weibo_unpressed.png);
+	left: 670px;
+	cursor: pointer;
+}
+
+#index .youtube-active {
+	background-image: url(assets/image/00/Youtube_pressed.png);
+	left: 865px;
+	cursor: pointer;
+}
+
+#index .youtube-inactive {
+	background-image: url(assets/image/00/Youtube_unpressed.png);
+	left: 865px;
+	cursor: pointer;
+}

@@ -1,0 +1,32 @@
+<?php
+/*
+Template Name: index.php
+*/
+?>
+
+<?php get_header(); ?>
+
+<div id="index">
+	<div class="bg-wrap">
+		<div class="background"></div>
+	</div>
+	<div class="wrap content">
+		<div class="logo"></div>
+		<div class="sub-title">The most powerful infrastructure for<br/>decentralized applications</div>
+		<div class="arrow"></div>
+		<div class="bar">
+			<div id="btn-email" class="bar-button email-inactive" onmouseout="$('#btn-email').removeClass('email-active'); $('#btn-email').addClass('email-inactive');" onmousemove="$('#btn-email').removeClass('email-inactive'); $('#btn-email').addClass('email-active');" onclick="window.location.href='mailto:eos@eosreal.com';"></div>
+
+			<div id="btn-twitter" class="bar-button twitter-inactive" onmouseout="$('#btn-twitter').removeClass('twitter-active'); $('#btn-twitter').addClass('twitter-inactive');" onmousemove="$('#btn-twitter').removeClass('twitter-inactive'); $('#btn-twitter').addClass('twitter-active');" onclick="window.location.href='https://twitter.com/EOSREAL_IO';"></div>
+
+			<div id="btn-wechat" class="bar-button wechat-inactive" onmouseout="$('#btn-wechat').removeClass('wechat-active'); $('#btn-wechat').addClass('wechat-inactive');" onmousemove="$('#btn-wechat').removeClass('wechat-inactive'); $('#btn-wechat').addClass('wechat-active');" ></div>
+
+			<div id="btn-weibo" class="bar-button weibo-inactive" onmouseout="$('#btn-weibo').removeClass('weibo-active'); $('#btn-weibo').addClass('weibo-inactive');" onmousemove="$('#btn-weibo').removeClass('weibo-inactive'); $('#btn-weibo').addClass('weibo-active');" onclick="window.location.href='https://www.weibo.com/u/6527955391?topnav=1&wvr=6&topsug=1';"></div>
+
+			<div id="btn-youtube" class="bar-button youtube-inactive" onmouseout="$('#btn-youtube').removeClass('youtube-active'); $('#btn-youtube').addClass('youtube-inactive');" onmousemove="$('#btn-youtube').removeClass('youtube-inactive'); $('#btn-youtube').addClass('youtube-active');" onclick="window.location.href='https://www.youtube.com/channel/UCDa2gIsEQway1DPNjMYar8g?view_as=subscriber';"></div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
