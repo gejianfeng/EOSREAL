@@ -8,7 +8,14 @@ Template Name: index.php
 
 <div id="index">
 	<div class="bg-wrap">
-		<div class="background"></div>
+		<div class="bg-container">
+			<div class="background bg0"></div>
+			<div class="background bg1" style="display: none;"></div>
+			<div class="background bg2" style="display: none;"></div>
+			<div class="background bg3" style="display: none;"></div>
+			<div class="background bg4" style="display: none;"></div>
+			<div class="background bg5" style="display: none;"></div>
+		</div>
 	</div>
 	<div class="wrap content">
 		<div class="logo"></div>
@@ -27,6 +34,36 @@ Template Name: index.php
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+
+var currentIdx = 0;
+
+function SwitchBackground()
+{
+	var nextIdx = (currentIdx + 1) % 6;
+
+	var nextObjectSelector = '.bg' + nextIdx;
+	var currentObjectSelector = '.bg' + currentIdx;
+
+	$(nextObjectSelector).css({"left": "1920px"});
+	$(nextObjectSelector).show();
+
+	$(nextObjectSelector).animate({left:'0px'}, 10000, function(){
+		currentIdx++;
+	});
+
+	$(currentObjectSelector).animate({left:'-1920px'}, 10000, function(){
+		$(currentObjectSelector).hide();
+	});
+}
+
+$(document).ready(function() {
+	SwitchBackground();
+	setInterval("SwitchBackground()", 12000);
+});
+
+</script>
 
 </body>
 </html>

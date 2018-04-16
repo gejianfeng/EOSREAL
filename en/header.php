@@ -18,10 +18,35 @@ Template Name: header.php
 	<body>
 		<div class='banner-container'>
 			<div id='banner'>
-				<div class="logo">EOSREAL</div>
-				<div id="banner-updates" class="section-block updates" onmouseout="$('#banner-updates').removeClass('section-active');" onmousemove="$('#banner-updates').addClass('section-active');">GET UPDATES</div> 
-				<div id="banner-resources" class="section-block resources" onmouseout="$('#banner-resources').removeClass('section-active');" onmousemove="$('#banner-resources').addClass('section-active');">RESOURCES</div> 
-				<div id="banner-team" class="section-block team" onmouseout="$('#banner-team').removeClass('section-active');" onmousemove="$('#banner-team').addClass('section-active');">OUR TEAM</div> 
-				<div id="banner-event" class="section-block event" onmouseout="$('#banner-event').removeClass('section-active');" onmousemove="$('#banner-event').addClass('section-active');">EVENTS</div> 
+
+<?php
+	$home_url = home_url();
+
+	$getupdates_url = $home_url . "/index.php/getupdates";
+	$resources_url = $home_url . "/index.php/resources";
+	$team_url = $home_url . "/index.php/team";
+	$events_url = $home_url . "/index.php/events";
+
+	if (is_page('getupdates'))
+	{
+		echo '<div class="logo can-click" onclick="window.location.href=\'' . $home_url . '\';">EOSREAL</div><div id="banner-updates" class="section-block updates section-active">GET UPDATES</div><div id="banner-resources" class="section-block resources can-click" onmouseout="$(\'#banner-resources\').removeClass(\'section-active\');" onmousemove="$(\'#banner-resources\').addClass(\'section-active\');" onclick="window.location.href=\'' . $resources_url . '\';">RESOURCES</div><div id="banner-team" class="section-block team can-click" onmouseout="$(\'#banner-team\').removeClass(\'section-active\');" onmousemove="$(\'#banner-team\').addClass(\'section-active\');" onclick="window.location.href=\'' . $team_url . '\';">OUR TEAM</div><div id="banner-event" class="section-block event can-click" onmouseout="$(\'#banner-event\').removeClass(\'section-active\');" onmousemove="$(\'#banner-event\').addClass(\'section-active\');" onclick="window.location.href=\'' . $events_url . '\';">EVENTS</div>';
+	}
+	else if (is_page('resources'))
+	{
+		echo '<div class="logo can-click" onclick="window.location.href=\'' . $home_url . '\';">EOSREAL</div><div id="banner-updates" class="section-block updates can-click" onmouseout="$(\'#banner-updates\').removeClass(\'section-active\');" onmousemove="$(\'#banner-updates\').addClass(\'section-active\');" onclick="window.location.href=\'' . $getupdates_url . '\';">GET UPDATES</div><div id="banner-resources" class="section-block resources section-active">RESOURCES</div><div id="banner-team" class="section-block team can-click" onmouseout="$(\'#banner-team\').removeClass(\'section-active\');" onmousemove="$(\'#banner-team\').addClass(\'section-active\');" onclick="window.location.href=\'' . $team_url . '\';">OUR TEAM</div><div id="banner-event" class="section-block event can-click" onmouseout="$(\'#banner-event\').removeClass(\'section-active\');" onmousemove="$(\'#banner-event\').addClass(\'section-active\');" onclick="window.location.href=\'' . $events_url . '\';">EVENTS</div>';
+	}
+	else if (is_page('team'))
+	{
+		echo '<div class="logo can-click" onclick="window.location.href=\'' . $home_url . '\';">EOSREAL</div><div id="banner-updates" class="section-block updates can-click" onmouseout="$(\'#banner-updates\').removeClass(\'section-active\');" onmousemove="$(\'#banner-updates\').addClass(\'section-active\');" onclick="window.location.href=\'' . $getupdates_url . '\';">GET UPDATES</div><div id="banner-resources" class="section-block resources can-click" onmouseout="$(\'#banner-resources\').removeClass(\'section-active\');" onmousemove="$(\'#banner-resources\').addClass(\'section-active\');" onclick="window.location.href=\'' . $resources_url . '\';">RESOURCES</div><div id="banner-team" class="section-block team section-active">OUR TEAM</div><div id="banner-event" class="section-block event can-click" onmouseout="$(\'#banner-event\').removeClass(\'section-active\');" onmousemove="$(\'#banner-event\').addClass(\'section-active\');" onclick="window.location.href=\'' . $events_url . '\';">EVENTS</div>';
+	}
+	else if (is_page('events'))
+	{
+		echo '<div class="logo can-click" onclick="window.location.href=\'' . $home_url . '\';">EOSREAL</div><div id="banner-updates" class="section-block updates can-click" onmouseout="$(\'#banner-updates\').removeClass(\'section-active\');" onmousemove="$(\'#banner-updates\').addClass(\'section-active\');" onclick="window.location.href=\'' . $getupdates_url . '\';">GET UPDATES</div><div id="banner-resources" class="section-block resources can-click" onmouseout="$(\'#banner-resources\').removeClass(\'section-active\');" onmousemove="$(\'#banner-resources\').addClass(\'section-active\');" onclick="window.location.href=\'' . $resources_url . '\';">RESOURCES</div><div id="banner-team" class="section-block team can-click" onmouseout="$(\'#banner-team\').removeClass(\'section-active\');" onmousemove="$(\'#banner-team\').addClass(\'section-active\');" onclick="window.location.href=\'' . $team_url . '\';">OUR TEAM</div><div id="banner-event" class="section-block event section-active">EVENTS</div>';
+	}
+	else 
+	{
+		echo '<div class="logo can-click" onclick="window.location.href=\'' . $home_url . '\';">EOSREAL</div><div id="banner-updates" class="section-block updates can-click" onmouseout="$(\'#banner-updates\').removeClass(\'section-active\');" onmousemove="$(\'#banner-updates\').addClass(\'section-active\');" onclick="window.location.href=\'' . $getupdates_url . '\';">GET UPDATES</div><div id="banner-resources" class="section-block resources can-click" onmouseout="$(\'#banner-resources\').removeClass(\'section-active\');" onmousemove="$(\'#banner-resources\').addClass(\'section-active\');" onclick="window.location.href=\'' . $resources_url . '\';">RESOURCES</div><div id="banner-team" class="section-block team can-click" onmouseout="$(\'#banner-team\').removeClass(\'section-active\');" onmousemove="$(\'#banner-team\').addClass(\'section-active\');" onclick="window.location.href=\'' . $team_url . '\';">OUR TEAM</div><div id="banner-event" class="section-block event can-click" onmouseout="$(\'#banner-event\').removeClass(\'section-active\');" onmousemove="$(\'#banner-event\').addClass(\'section-active\');" onclick="window.location.href=\'' . $events_url . '\';">EVENTS</div>';
+	}
+?>
 			</div>
 		</div>

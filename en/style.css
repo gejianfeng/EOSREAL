@@ -4,15 +4,20 @@
 	src: url(assets/font/calibril.ttf);
 }
 
+@font-face {
+	font-family: "Calibri Regular";
+	src: url(assets/font/calibri.ttf);
+}
+
 /* global stylesheet */
 body {
 	margin: 0px auto;
-	min-width: 1024px;
+	min-width: 1280px;
 	text-align: center;
 }
 
 .wrap {
-	width: 1024px;
+	width: 1280px;
 	height: 100%;
 	margin: 0px auto;
 	position: relative;
@@ -20,7 +25,7 @@ body {
 
 /* banner stylesheet */
 .banner-container {
-	max-width: 1280px;
+	max-width: 1920px;
 	height: 76px;
 	margin: 0px auto;
 }
@@ -28,10 +33,13 @@ body {
 #banner {
 	height: 76px;
 	background-color: rgb(255, 255, 255);
-	max-width: 1280px;
-	min-width: 1024px;
+	max-width: 1920px;
+	min-width: 1280px;
 	width: 100%;
-	position: relative;
+	position: fixed;
+	z-index: 4;
+	transition: all 300ms ease-in-out;
+	margin:0 auto;
 }
 
 #banner .logo {
@@ -40,7 +48,7 @@ body {
 	color: rgb(68, 63, 84);
 	font-size: 42px;
 	top: 5px;
-	left: 0px;
+	left: 20px;
 	position: absolute;
 }
 
@@ -54,6 +62,9 @@ body {
 	top: 15px;
 	position: absolute;
 	padding-top: 10px;
+}
+
+#banner .can-click {
 	cursor: pointer;
 }
 
@@ -64,19 +75,19 @@ body {
 }
 
 #banner .event {
-	right: 0px;
+	right: 20px;
 }
 
 #banner .team {
-	right: 160px;
+	right: 190px;
 }
 
 #banner .resources {
-	right: 320px;
+	right: 360px;
 }
 
 #banner .updates {
-	right: 480px;
+	right: 530px;
 }
 
 /* index.php stylesheet */
@@ -88,17 +99,48 @@ body {
 #index .bg-wrap {
 	width: 1920px;
 	height: 859px;
-	margin: 0px auto;
 	position: relative;
-	z-index: -1;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+#index .bg-container {
+	position: absolute;
+	width: 1920px;
+	height: 859px;
 }
 
 #index .background {
-	background-image: url(assets/image/00/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: visible;
 	height: 859px;
+	position: absolute;
+	width: 1920px;
+}
+
+#index .bg0 {
+	background-image: url(assets/image/00/bg.jpg);
+}
+
+#index .bg1 {
+	background-image: url(assets/image/00/bg_lundun.jpg);
+}
+
+#index .bg2 {
+	background-image: url(assets/image/00/bg_shanghai.jpg);
+}
+
+#index .bg3 {
+	background-image: url(assets/image/00/bg_taijiling.jpg);
+}
+
+#index .bg4 {
+	background-image: url(assets/image/00/bg_xini.jpg);
+}
+
+#index .bg5 {
+	background-image: url(assets/image/00/bg_xinjiapo.jpg);
 }
 
 #index .content {
@@ -145,7 +187,7 @@ body {
 	width: 1007px;
 	height: 104px;
 	top: 680px;
-	left: 9px;
+	left: 135px;
 	position: absolute;
 }
 
@@ -215,4 +257,308 @@ body {
 	background-image: url(assets/image/00/Youtube_unpressed.png);
 	left: 865px;
 	cursor: pointer;
+}
+
+/* footer stylesheet */
+#footer {
+	height: 200px;
+	background-color: rgb(68, 63, 83);
+	max-width: 1920px;
+	position: relative;
+	margin: 0px auto;
+}
+
+#footer .hype-line-icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 33px;
+	height: 27px;
+	cursor: pointer;
+	top: 90px;
+}
+
+#footer .link1 {
+	left: 25px;
+	background-image: url(assets/image/01/icon1.png);
+}
+
+#footer .link2 {
+	left: 85px;
+	background-image: url(assets/image/01/icon1.png);
+}
+
+#footer .link3 {
+	left: 145px;
+	background-image: url(assets/image/01/icon2.png);
+}
+
+#footer .link4 {
+	left: 205px;
+	background-image: url(assets/image/01/icon3.png);
+}
+
+#footer .link5 {
+	left: 265px;
+	background-image: url(assets/image/01/icon4.png);
+}
+
+#footer .logo {
+	text-align: center;
+	width: 100%;
+	font-family: "Calibri Regular";
+	color: rgb(174, 168, 196);
+	font-size: 90px;
+	top: 35px;
+	position: absolute;
+}
+
+#footer .right-text {
+	text-align: right;
+	width: 100%;
+	font-family: "Calibri Regular";
+	color: rgb(149, 146, 157);
+	font-size: 14px;
+	top: 105px;
+	right: 25px;
+	position: absolute;
+}
+
+/* tbc stylesheet */
+#tbc {
+	height: 859px;
+	position: relative;
+}
+
+#tbc .inner-wrap {
+	background-image: url(assets/image/00/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	max-width: 1920px;
+	min-width: 1280px;
+	height: 859px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#tbc .content {
+	text-align: center;
+	font-family: "Calibri Regular";
+	color: rgb(68, 63, 84);
+	font-size: 70px;
+	padding-top: 400px;
+}
+
+/* event stylesheet */
+#event {
+	height: 1150px;
+	position: relative;
+}
+
+#date-frame {
+	border: 1px;
+	border-style: solid;
+	border-color: rgb(229, 229, 229);
+	width: 152px;
+	height: 176px;
+	top: 60px;
+	left: 95px;
+	position: absolute;
+}
+
+#date-frame .day-of-week {
+	text-align: left;
+	font-family: "Calibri Light";
+	color: rgb(68, 63, 84);
+	font-size: 22px;
+	top: 20px;
+	left: 20px;
+	position: absolute;
+	font-weight: bold;
+}
+
+#date-frame .day {
+	font-weight: bold;
+	text-align: left;
+	font-family: "Calibri Light";
+	font-size: 48px;
+	top: 55px;
+	left: 20px;
+	position: absolute;
+	display: inline-block;
+	background:-ms-linear-gradient(left, rgb(244, 198, 13), rgb(200, 96, 40));
+	background:-moz-linear-gradient(left, rgb(244, 198, 13), rgb(200, 96, 40));/*火狐*/
+	background:-webkit-gradient(linear, 0% 0%, 100% 0%,from(rgb(244, 198, 13)), to(rgb(200, 96, 40)));/*谷歌*/
+	background-image:-webkit-gradient(linear,left top,right top,color-start(0, rgb(244, 198, 13)),color-stop(1, rgb(200, 96, 40)));/* Safari & Chrome*/  
+	filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='rgb(244, 198, 13)', endColorstr='rgb(200, 96, 40)'); /*IE6 & IE7*/  
+	-ms-filter:progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='rgb(244, 198, 13)', endColorstr='rgb(200, 96, 40)'); /* IE8 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#date-frame .date {
+	text-align: left;
+	font-family: "Calibri Light";
+	color: rgb(68, 63, 84);
+	font-size: 22px;
+	top: 110px;
+	left: 20px;
+	position: absolute;
+	font-weight: bold;
+}
+
+#date-frame .time {
+	text-align: left;
+	font-family: "Calibri Light";
+	color: rgb(68, 63, 84);
+	opacity: 0.7;
+	font-size: 14px;
+	top: 135px;
+	left: 20px;
+	position: absolute;
+	font-weight: bold;
+}
+
+#event-content .title {
+	text-align: left;
+	font-family: "Calibri Regular";
+	color: rgb(68, 63, 84);
+	font-size: 22px;
+	top: 60px;
+	left: 295px;
+	position: absolute;
+	font-weight: bold;
+}
+
+#event-content .icon {
+	background-image: url(assets/image/04/photo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 32px;
+	height: 32px;
+	overflow: visible;
+	left: 295px;
+	top: 100px;
+	position: absolute;
+}
+
+#event-content .author {
+	text-align: left;
+	font-family: "Calibri Light";
+	color: rgb(68, 63, 84);
+	opacity: 0.7;
+	font-size: 14px;
+	top: 105px;
+	left: 340px;
+	position: absolute;
+	font-weight: bold;
+}
+
+#event-content .image {
+	background-image: url(assets/image/04/pic.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 619px;
+	height: 348px;
+	overflow: visible;
+	left: 295px;
+	top: 150px;
+	position: absolute;
+}
+
+#event-content .content {
+	width: 620px;
+	font-family: "Calibri Light";
+	font-size: 14px;
+	color: rgb(68, 63, 84);
+	position: absolute;
+	left: 295px;
+	top: 535px;
+	padding-top: 0px;
+	padding-left: 0px;
+	text-align: left;
+}
+
+#location-frame {
+	background-color: rgb(246, 247, 248);
+	width: 284px;
+	height: 144px;
+	top: 910px;
+	left: 295px;
+	position: absolute;
+}
+
+#location-frame .time-icon {
+	background-image: url(assets/image/04/icon_time.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 15px;
+	height: 15px;
+	overflow: visible;
+	left: 20px;
+	top: 30px;
+	position: absolute;
+}
+
+#location-frame .location-icon {
+	background-image: url(assets/image/04/icon_location.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 15px;
+	height: 19px;
+	overflow: visible;
+	left: 20px;
+	top: 85px;
+	position: absolute;
+}
+
+#location-frame .main-info {
+	text-align: left;
+	font-family: "Calibri Light";
+	color: rgb(68, 63, 84);
+	font-size: 14px;
+	left: 50px;
+	position: absolute;
+	font-weight: bold;
+}
+
+#location-frame .sub-info {
+	text-align: left;
+	font-family: "Calibri Light";
+	color: rgb(68, 63, 84);
+	opacity: 0.8;
+	font-size: 14px;
+	top: 110px;
+	left: 50px;
+	position: absolute;
+	font-weight: bold;
+}
+
+#event-content .register-text {
+	text-align: left;
+	font-family: "Calibri Regular";
+	color: rgb(68, 63, 84);
+	font-size: 18px;
+	top: 970px;
+	left: 610px;
+	position: absolute;
+}
+
+#event-content .register-button {
+	background-image: url(assets/image/04/button_registrate.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 147px;
+	height: 40px;
+	overflow: visible;
+	left: 610px;
+	top: 1010px;
+	position: absolute;
+	cursor: pointer;
+
+	font-family: "Calibri Regular";
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	padding-top: 5px;
 }
