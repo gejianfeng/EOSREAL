@@ -21,12 +21,14 @@ Template Name: index.php
 		<div class="logo"></div>
 		<div class="sub-title">The most powerful infrastructure for<br/>decentralized applications</div>
 		<div class="arrow"></div>
+		<div class="wxframe" style="display: none;"></div>
+		<div class="wxframeclose" style="display: none;" onclick="closeWeixinIcon();">CLOSE</div>
 		<div class="bar">
 			<div id="btn-email" class="bar-button email-inactive" onmouseout="$('#btn-email').removeClass('email-active'); $('#btn-email').addClass('email-inactive');" onmousemove="$('#btn-email').removeClass('email-inactive'); $('#btn-email').addClass('email-active');" onclick="window.location.href='mailto:eos@eosreal.com';"></div>
 
 			<div id="btn-twitter" class="bar-button twitter-inactive" onmouseout="$('#btn-twitter').removeClass('twitter-active'); $('#btn-twitter').addClass('twitter-inactive');" onmousemove="$('#btn-twitter').removeClass('twitter-inactive'); $('#btn-twitter').addClass('twitter-active');" onclick="window.location.href='https://twitter.com/EOSREAL_IO';"></div>
 
-			<div id="btn-wechat" class="bar-button wechat-inactive" onmouseout="$('#btn-wechat').removeClass('wechat-active'); $('#btn-wechat').addClass('wechat-inactive');" onmousemove="$('#btn-wechat').removeClass('wechat-inactive'); $('#btn-wechat').addClass('wechat-active');" ></div>
+			<div id="btn-wechat" class="bar-button wechat-inactive" onmouseout="$('#btn-wechat').removeClass('wechat-active'); $('#btn-wechat').addClass('wechat-inactive');" onmousemove="$('#btn-wechat').removeClass('wechat-inactive'); $('#btn-wechat').addClass('wechat-active');" onclick="showWeixinIcon();"></div>
 
 			<div id="btn-weibo" class="bar-button weibo-inactive" onmouseout="$('#btn-weibo').removeClass('weibo-active'); $('#btn-weibo').addClass('weibo-inactive');" onmousemove="$('#btn-weibo').removeClass('weibo-inactive'); $('#btn-weibo').addClass('weibo-active');" onclick="window.location.href='https://www.weibo.com/u/6527955391?topnav=1&wvr=6&topsug=1';"></div>
 
@@ -38,6 +40,7 @@ Template Name: index.php
 <script type="text/javascript">
 
 var currentIdx = 0;
+var animCnt = 0;
 
 function SwitchBackground()
 {
@@ -46,21 +49,48 @@ function SwitchBackground()
 	var nextObjectSelector = '.bg' + nextIdx;
 	var currentObjectSelector = '.bg' + currentIdx;
 
+	animCnt = 2;
+
 	$(nextObjectSelector).css({"left": "1920px"});
 	$(nextObjectSelector).show();
 
-	$(nextObjectSelector).animate({left:'0px'}, 10000, function(){
+	$(nextObjectSelector).animate({left:'0px'}, 20000, "linear", function(){
 		currentIdx++;
+
+		animCnt--;
+		CheckAnim();
 	});
 
-	$(currentObjectSelector).animate({left:'-1920px'}, 10000, function(){
+	$(currentObjectSelector).animate({left:'-1920px'}, 20000, "linear", function(){
 		$(currentObjectSelector).hide();
+
+		animCnt--;
+		CheckAnim();
 	});
+}
+
+function CheckAnim()
+{
+	if (animCnt == 0)
+	{
+		SwitchBackground();
+	}
+}
+
+function showWeixinIcon()
+{
+	$(".wxframe").show();
+	$(".wxframeclose").show();
+}
+
+function closeWeixinIcon()
+{
+	$(".wxframe").hide();
+	$(".wxframeclose").hide();
 }
 
 $(document).ready(function() {
 	SwitchBackground();
-	setInterval("SwitchBackground()", 12000);
 });
 
 </script>

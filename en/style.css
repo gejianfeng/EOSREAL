@@ -167,6 +167,37 @@ input {
 	margin-top: -859px;
 }
 
+#index .wxframe {
+	background-image: url(assets/image/00/weixin.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	width: 430px;
+	height: 430px;
+	top: 150px;
+	left: 425px;
+	position: absolute;
+}
+
+#index .wxframeclose {
+	background-image: url(assets/image/01/button_pressed.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	width: 164px;
+	height: 45px;
+	top: 600px;
+	left: 558px;
+	position: absolute;
+
+	text-align: center;
+	font-family: "Calibri Regular";
+	color: rgb(0, 0, 0);
+	font-size: 30px;
+
+	cursor: pointer;
+}
+
 #index .logo {
 	background-image: url(assets/image/00/logo_city.png);
 	background-repeat: no-repeat;
