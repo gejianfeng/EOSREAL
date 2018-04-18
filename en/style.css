@@ -803,3 +803,81 @@ input {
 	font-size: 20px;
 	padding-left: 9px;
 }
+
+/* resources stylesheet */
+#resources {
+	height: 859px;
+	position: relative;
+}
+
+#resources .container {
+	padding: 0px;
+}
+
+#resources .title {
+	font-family: "Impact Regular";
+	font-size: 60px;
+	color: rgb(0, 0, 0);
+	width: 100%;
+	margin-top: 62px;
+}
+
+#resources .list-container {
+	margin-top: 58px;
+	width: 100%;
+}
+
+#resources .block {
+	height: 130px;
+}
+
+#resources .news-title {
+	margin-top: 0px;
+	width: 100%;
+	font-family: "Calibri Light";
+	color: rgb(68, 63, 84);
+	font-size: 22px;
+	font-weight: bold;
+	text-align: left;
+}
+
+#resources .news-date-container {
+	margin-top: 38px;
+	width: 100%;
+	position: relative;
+	padding: 0px;
+	height: 22px;
+}
+
+#resources .news-line {
+	width: 50px;
+	height: 1px;
+	background-color: rgb(209, 161, 51);
+	position: absolute;
+	left: 0px;
+	top: 10px;
+}
+
+#resources .news-date {
+	font-family: "Calibri Light";
+	color: rgb(209, 161, 51);
+	font-size: 14px;
+	left: 68px;
+	position: absolute;
+	text-align: left;
+}
+
+#resources .news-content-container {
+	margin-top: 20px;
+	width: 100%;
+	position: relative;
+}
+
+#resources .news-content {
+	position: absolute;
+	left: 68px;
+	font-family: "Calibri Light";
+	color: rgb(174, 168, 193);
+	font-size: 14px;
+	text-align: left;
+}
