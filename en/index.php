@@ -54,14 +54,14 @@ function SwitchBackground()
 	$(nextObjectSelector).css({"left": "1920px"});
 	$(nextObjectSelector).show();
 
-	$(nextObjectSelector).animate({left:'0px'}, 20000, "linear", function(){
+	$(nextObjectSelector).animate({left:'0px'}, 5000, "linear", function(){
 		currentIdx++;
 
 		animCnt--;
 		CheckAnim();
 	});
 
-	$(currentObjectSelector).animate({left:'-1920px'}, 20000, "linear", function(){
+	$(currentObjectSelector).animate({left:'-1920px'}, 5000, "linear", function(){
 		$(currentObjectSelector).hide();
 
 		animCnt--;
@@ -73,7 +73,7 @@ function CheckAnim()
 {
 	if (animCnt == 0)
 	{
-		SwitchBackground();
+		setTimeout("SwitchBackground()", 3000);
 	}
 }
 

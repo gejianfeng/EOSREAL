@@ -616,7 +616,7 @@ input {
 
 /* team stylesheet */
 #team {
-	height: 2200px;
+	height: 2400px;
 	position: relative;
 }
 
@@ -639,14 +639,45 @@ input {
 }
 
 #team .photo {
-	background-image: url(assets/image/03/photo.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	left: 0px;
 	top: 0px;
 	position: absolute;
+	background-size: 238px;
+
 	width: 238px;
 	height: 300px;
+}
+
+#team .ag {
+	background-image: url(assets/image/03/ag.png);
+	/*width: 126px;
+	height: 190px;*/
+}
+
+#team .fb {
+	background-image: url(assets/image/03/fb.png);
+	/*width: 94px;
+	height: 142px;*/
+}
+
+#team .gx {
+	background-image: url(assets/image/03/gx.png);
+	/*width: 116px;
+	height: 174px;*/
+}
+
+#team .px {
+	background-image: url(assets/image/03/px.png);
+	/*width: 133px;
+	height: 200px;*/
+}
+
+#team .ym {
+	background-image: url(assets/image/03/ym.png);
+	/*width: 118px;
+	height: 177px;*/
 }
 
 #team .name {
