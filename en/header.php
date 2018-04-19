@@ -11,7 +11,7 @@ Template Name: header.php
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 
 		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<!--<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">-->
 		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
 	</head>
 
@@ -31,7 +31,7 @@ Template Name: header.php
 	{
 		echo '<div class="logo can-click" onclick="window.location.href=\'' . $home_url . '\';">EOSREAL</div><div id="banner-updates" class="section-block updates section-active">GET UPDATES</div><div id="banner-resources" class="section-block resources can-click" onmouseout="$(\'#banner-resources\').removeClass(\'section-active\');" onmousemove="$(\'#banner-resources\').addClass(\'section-active\');" onclick="window.location.href=\'' . $resources_url . '\';">RESOURCES</div><div id="banner-team" class="section-block team can-click" onmouseout="$(\'#banner-team\').removeClass(\'section-active\');" onmousemove="$(\'#banner-team\').addClass(\'section-active\');" onclick="window.location.href=\'' . $team_url . '\';">OUR TEAM</div><div id="banner-event" class="section-block event can-click" onmouseout="$(\'#banner-event\').removeClass(\'section-active\');" onmousemove="$(\'#banner-event\').addClass(\'section-active\');" onclick="window.location.href=\'' . $events_url . '\';">EVENTS</div>';
 	}
-	else if (is_page('resources'))
+	else if (is_page('resources') || is_page('news'))
 	{
 		echo '<div class="logo can-click" onclick="window.location.href=\'' . $home_url . '\';">EOSREAL</div><div id="banner-updates" class="section-block updates can-click" onmouseout="$(\'#banner-updates\').removeClass(\'section-active\');" onmousemove="$(\'#banner-updates\').addClass(\'section-active\');" onclick="window.location.href=\'' . $getupdates_url . '\';">GET UPDATES</div><div id="banner-resources" class="section-block resources section-active">RESOURCES</div><div id="banner-team" class="section-block team can-click" onmouseout="$(\'#banner-team\').removeClass(\'section-active\');" onmousemove="$(\'#banner-team\').addClass(\'section-active\');" onclick="window.location.href=\'' . $team_url . '\';">OUR TEAM</div><div id="banner-event" class="section-block event can-click" onmouseout="$(\'#banner-event\').removeClass(\'section-active\');" onmousemove="$(\'#banner-event\').addClass(\'section-active\');" onclick="window.location.href=\'' . $events_url . '\';">EVENTS</div>';
 	}

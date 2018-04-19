@@ -13,6 +13,8 @@ Template Name: resources.php
 			<div class="list-container">
 
 <?php
+	$home_url = home_url();
+
 	$news_query = new WP_Query('category_name=news');
 
 	$count = 0;
@@ -24,8 +26,9 @@ Template Name: resources.php
 
 			$margin_top_val = $count * 102;
 
+			$article_link = $home_url . "/index.php/news?id=" . $post->ID;
 			echo '<div class="block" style="margin-top:' . $margin_top_val . 'px;">';
-			echo '<div class="news-title">' . $title_value . '</div>';
+			echo '<div class="news-title"><a href="' . $article_link . '">' . $title_value . '</a></div>';
 			
 			/* start date container */
 			echo '<div class="news-date-container">';
@@ -40,7 +43,8 @@ Template Name: resources.php
 			/* start content container */
 			echo '<div class="news-content-container">';
 			echo '<div class="news-content">';
-			the_content('Learn more');
+			echo $article_link;
+			the_content('<a href="' . $article_link . '">Learn more</a>', false);
 			echo '</div>';
 			echo '</div>';
 			/* end content container */
