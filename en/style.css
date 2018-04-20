@@ -784,22 +784,14 @@ a:hover {
 	position: relative;
 }
 
-#getupdates .bg-wrap {
-	width: 1920px;
-	height: 859px;
-	position: relative;
-	margin: 0px auto;
-	overflow: hidden;
-}
-
 #getupdates .background {
 	background-image: url(assets/image/00/bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: visible;
 	height: 859px;
-	position: absolute;
-	width: 1920px;
+	position: relative;
+	margin: 0px auto;
 }
 
 #getupdates .frame {
