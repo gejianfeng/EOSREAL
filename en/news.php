@@ -6,7 +6,10 @@ Template Name: news.php
 
 <?php get_header(); ?>
 
-<?php 
+<?php
+	$home_url = home_url();
+	$comment_url = $home_url . "/wp/wp-comments-post.php";
+
 	$article_id = $_GET['id'];
 	$bFound = false;
 
@@ -31,6 +34,14 @@ Template Name: news.php
 				echo '<div class="article-content">';
 				echo $post->post_content;
 				echo '</div>';
+				
+				echo '<div class="article-comment">';
+				echo '<div class="comment-form-title">Comment(' . get_comments_number($post->ID) . ')</div>';
+				echo '<form class="comment-form" action="' . $comment_url . '" method="post" id="commentform" novalidate>';
+				echo '<textarea class="comment-box"></textarea>';
+				echo '</form>';
+				echo '</div>';
+				
 				echo '</div>';
 				echo '</div>';
 				echo '</div>';

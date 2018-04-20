@@ -247,14 +247,14 @@ a:hover {
 }
 
 #index .bar {
-	background-image: url(assets/image/00/bar.png);
+	background-image: url(assets/image/00/homepage_bg_white.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	overflow: visible;
-	width: 1007px;
-	height: 104px;
+	width: 1028px;
+	height: 115px;
 	top: 680px;
-	left: 135px;
+	left: 126px;
 	position: absolute;
 }
 
@@ -270,60 +270,104 @@ a:hover {
 
 #index .email-active {
 	background-image: url(assets/image/00/email_pressed.png);
-	left: 90px;
+	left: 45px;
 }
 
 #index .email-inactive {
 	background-image: url(assets/image/00/email_unpressed.png);
-	left: 90px;
+	left: 45px;
 }
 
 #index .twitter-active {
 	background-image: url(assets/image/00/twitter_pressed.png);
-	left: 280px;
+	left: 170px;
 	cursor: pointer;
 }
 
 #index .twitter-inactive {
 	background-image: url(assets/image/00/twitter_unpressed.png);
-	left: 280px;
+	left: 170px;
 	cursor: pointer;
 }
 
 #index .wechat-active {
 	background-image: url(assets/image/00/weixin_pressed.png);
-	left: 475px;
+	left: 295px;
 	cursor: pointer;
 }
 
 #index .wechat-inactive {
 	background-image: url(assets/image/00/weixin_unpressed.png);
-	left: 475px;
+	left: 295px;
+	cursor: pointer;
+}
+
+#index .telegram-active {
+	background-image: url(assets/image/00/button_telegram_pressed.png);
+	left: 420px;
+	cursor: pointer;
+}
+
+#index .telegram-inactive {
+	background-image: url(assets/image/00/button_telegram_unpressed.png);
+	left: 420px;
+	cursor: pointer;
+}
+
+#index .medium-active {
+	background-image: url(assets/image/00/button_medium_pressed.png);
+	left: 545px;
+	cursor: pointer;
+}
+
+#index .medium-inactive {
+	background-image: url(assets/image/00/button_medium_unpressed.png);
+	left: 545px;
+	cursor: pointer;
+}
+
+#index .steemit-active {
+	background-image: url(assets/image/00/button_steemit_pressed.png);
+	left: 670px;
+	cursor: pointer;
+}
+
+#index .steemit-inactive {
+	background-image: url(assets/image/00/button_steemit_unpressed.png);
+	left: 670px;
 	cursor: pointer;
 }
 
 #index .weibo-active {
 	background-image: url(assets/image/00/weibo_pressed.png);
-	left: 670px;
+	left: 795px;
 	cursor: pointer;
 }
 
 #index .weibo-inactive {
 	background-image: url(assets/image/00/weibo_unpressed.png);
-	left: 670px;
+	left: 795px;
 	cursor: pointer;
 }
 
 #index .youtube-active {
 	background-image: url(assets/image/00/Youtube_pressed.png);
-	left: 865px;
+	left: 920px;
 	cursor: pointer;
 }
 
 #index .youtube-inactive {
 	background-image: url(assets/image/00/Youtube_unpressed.png);
-	left: 865px;
+	left: 920px;
 	cursor: pointer;
+}
+
+#index .bar-split {
+	background-color: rgb(119, 123, 132);
+	width: 1px;
+	height: 62px;
+	top: 16px;
+	position: absolute;
 }
 
 /* footer stylesheet */
@@ -948,4 +992,40 @@ a:hover {
 	padding: 0px;
 	text-align: left;
 	line-height: 2;
+}
+
+#news .article-comment {
+	width: 100%;
+	margin-top: 230px;
+	margin-bottom: 260px;
+	min-height: 1px;
+	padding: 0px;
+}
+
+#news .comment-form-title {
+	font-family: "Calibri Light";
+	font-size: 18px;
+	color: rgb(68, 63, 84);
+	width: 994px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: left;
+	padding-left: 30px;
+}
+
+#news .comment-form {
+	margin-left: 30px;
+	width: 994px;
+	height: auto;
+}
+
+#news .comment-box {
+	height: 150px;
+	width: 100%;
+	resize: none;
+	font-family: "Calibri Light";
+	font-size: 18px;
+	color: rgb(68, 63, 84);
+	rows: "6";
 }
