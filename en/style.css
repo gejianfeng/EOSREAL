@@ -992,6 +992,7 @@ a:hover {
 	margin-bottom: 62px;
 	min-height: 1px;
 	padding: 0px;
+	position: relative;
 }
 
 #news .comment-form-title {
@@ -1093,4 +1094,15 @@ a:hover {
 	width: 884px;
 	height: auto;
 	position: absolute;
+}
+
+#news .subscribe {
+	cursor: pointer;
+	font-family: "Calibri Light";
+	font-size: 18px;
+	color: rgb(68, 63, 84);
+	text-align: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
 }

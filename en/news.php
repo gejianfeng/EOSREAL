@@ -9,6 +9,7 @@ Template Name: news.php
 <?php
 	$home_url = home_url();
 	$comment_url = $home_url . "/wp-comments-post.php";
+	$subscribe_url = $home_url . "/index.php/getupdates";
 
 	$article_id = $_GET['id'];
 	$bFound = false;
@@ -39,6 +40,7 @@ Template Name: news.php
 				
 				echo '<div class="article-comment">';
 				echo '<div class="comment-form-title">Comment(' . $post->comment_count . ')</div>';
+				echo '<div class="subscribe" onclick="window.location.href=\'' . $subscribe_url . '\'">Subscribe via e-mail</div>';
 				echo '<form class="comment-form" action="' . $comment_url . '" method="post" id="commentform" novalidate>';
 				echo '<form class="comment-form" action="' . $article_link . '" method="post" id="commentform" novalidate>';
 				echo '<textarea id="comment" name="comment" class="comment-box"></textarea>';
