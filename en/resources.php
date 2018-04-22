@@ -43,7 +43,6 @@ Template Name: resources.php
 			/* start content container */
 			echo '<div class="news-content-container">';
 			echo '<div class="news-content">';
-			echo $article_link;
 			the_content('<a href="' . $article_link . '">Learn more</a>', false);
 			echo '</div>';
 			echo '</div>';
