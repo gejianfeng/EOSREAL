@@ -989,7 +989,7 @@ a:hover {
 #news .article-comment {
 	width: 100%;
 	margin-top: 230px;
-	margin-bottom: 260px;
+	margin-bottom: 62px;
 	min-height: 1px;
 	padding: 0px;
 }
@@ -1019,4 +1019,78 @@ a:hover {
 	font-family: "Calibri Light";
 	font-size: 18px;
 	color: rgb(68, 63, 84);
+}
+
+#news .comment-submit {
+	width: 198px;
+	height: 52px;
+	background: url(assets/image/02/button_submit.jpg);
+	margin-top: 25px;
+	font-family: "Calibri Light";
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	border: 0px;
+}
+
+#news .comment-history {
+	height: auto;
+	margin-left: 30px;
+	width: 994px;
+	margin-bottom: 260px;
+}
+
+#news .comment-single {
+	height: 110px;
+	width: 100%;
+	position: relative;
+}
+
+#news .comment-split-line {
+	position: absolute;
+	bottom: 0px;
+	height: 1px;
+	background-color: rgb(220, 220, 200);
+	width: 100%;
+}
+
+#news .comment-photo {
+	width: 82px;
+	height: 82px;
+	background: url(assets/image/02/icon.png);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#news .comment-time {
+	font-family: "Calibri Light";
+	font-size: 12px;
+	color: rgb(149, 149, 149);
+	text-align: left;
+	top: 14px;
+	left: 110px;
+	position: absolute;
+}
+
+#news .comment-author {
+	font-family: "Calibri Light";
+	font-size: 16px;
+	color: rgb(209, 161, 51);
+	text-align: left;
+	top: 30px;
+	left: 110px;
+	position: absolute;
+}
+
+#news .comment-body {
+	font-family: "Calibri Light";
+	font-size: 14px;
+	color: rgb(68, 63, 84);
+	text-align: left;
+	top: 60px;
+	left: 110px;
+	width: 884px;
+	height: auto;
+	position: absolute;
 }
