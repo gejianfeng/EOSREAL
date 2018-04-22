@@ -817,17 +817,19 @@ a:hover {
 
 #getupdates .field-title {
 	font-family: "Calibri Light";
-	color: rgb(119, 123, 132);
 	position: absolute;
 	opacity: 0.7;
 }
 
 #getupdates .main {
 	font-size: 24px;
+	color: rgb(119, 123, 132);
 }
 
-#getupdates .sub {
-	font-size: 12px;
+#getupdates .check {
+	font-size: 18px;
+	color: rgb(255, 0, 0);
+	display: none;
 }
 
 #getupdates .button {
@@ -844,7 +846,7 @@ a:hover {
 	font-family: "Calibri Light";
 	color: rgb(255, 255, 255);
 	font-size: 24px;
-	padding-top: 6px;
+	padding-top: 20px;
 
 	cursor: pointer;
 }
@@ -854,6 +856,20 @@ a:hover {
 	color: rgb(119, 123, 132);
 	font-size: 20px;
 	padding-left: 9px;
+}
+
+#getupdates .subscribe-submit {
+	width: 198px;
+	height: 52px;
+	background: url(assets/image/02/button_submit.jpg);
+	font-family: "Calibri Light";
+	font-size: 24px;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	border: 0px;
+	left: 30px;
+	position: absolute;
+	top: 385px;
 }
 
 /* resources stylesheet */
