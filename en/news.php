@@ -42,7 +42,7 @@ Template Name: news.php
 				echo '<div class="comment-form-title">Comment(' . $post->comment_count . ')</div>';
 				echo '<div class="subscribe" onclick="window.location.href=\'' . $subscribe_url . '\'">Subscribe via e-mail</div>';
 				echo '<form class="comment-form" action="' . $comment_url . '" method="post" id="commentform" novalidate>';
-				echo '<form class="comment-form" action="' . $article_link . '" method="post" id="commentform" novalidate>';
+				//echo '<form class="comment-form" action="' . $article_link . '" method="post" id="commentform" novalidate>';
 				echo '<textarea id="comment" name="comment" class="comment-box"></textarea>';
 				echo '<div style="text-align: right;"><input id="submit" name="submit" class="comment-submit" type="submit" value="POST COMMENT"/></div>';
 				echo '<input type="hidden" name="comment_post_ID" value="' . $post->ID . '" id="comment_post_ID">';
