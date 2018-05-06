@@ -8,7 +8,7 @@ Template Name: footer.php
 			<div class="logo">EOSREAL</div>
 			<div class="right-text">support@block.one | Terms of Use | Privacy Policy</div>
 
-			<div class="hype-line-icon link1"></div>
+			<!--<div class="hype-line-icon link1"></div>-->
 			<div class="hype-line-icon link2" onclick="window.location.href='https://t.me/joinchat/G6-t7RKGUdGWu-Q8MA5IKg';"></div>
 			<div class="hype-line-icon link3" onclick="window.location.href='https://twitter.com/EOSREAL_IO';"></div>
 			<div class="hype-line-icon link4"></div>
