@@ -55,7 +55,7 @@ Template Name: news.php
 
 				echo '<div class="comment-history">';
 				$args = array(
-					'post_id' => $article_link,
+					'post_id' => $article_id,
 					'order' => 'DESC',
 				);
 				$comments_query = new WP_Comment_Query;
