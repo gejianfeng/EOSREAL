@@ -874,7 +874,7 @@ a:hover {
 
 /* resources stylesheet */
 #resources {
-	height: 859px;
+	min-height: 859px;
 	position: relative;
 }
 
@@ -893,6 +893,7 @@ a:hover {
 #resources .list-container {
 	margin-top: 58px;
 	width: 100%;
+	margin-bottom: 200px;
 }
 
 #resources .block {
