@@ -6,7 +6,7 @@ Template Name: footer.php
 	<div id="footer">
 		<div class="wrap">
 			<div class="logo">EOSREAL</div>
-			<div class="right-text">support@block.one | Terms of Use | Privacy Policy</div>
+			<div class="right-text">eos@eosreal.com | Terms of Use | Privacy Policy</div>
 
 			<!--<div class="hype-line-icon link1"></div>-->
 			<div class="hype-line-icon link2" onclick="window.location.href='https://t.me/joinchat/G6-t7RKGUdGWu-Q8MA5IKg';"></div>
