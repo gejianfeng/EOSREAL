@@ -27,7 +27,7 @@ Template Name: resources.php
 			$margin_top_val = $count * 102;
 
 			$article_link = $home_url . "/index.php/news?id=" . $post->ID;
-			echo '<div class="block" style="margin-top:' . $margin_top_val . 'px;">';
+			echo '<div class="block" style="margin-top: 0px;">';
 			echo '<div class="news-title"><a href="' . $article_link . '">' . $title_value . '</a></div>';
 			
 			/* start date container */

@@ -896,7 +896,7 @@ a:hover {
 }
 
 #resources .block {
-	height: 130px;
+	margin-bottom: 102px;
 }
 
 #resources .news-title {
@@ -942,8 +942,8 @@ a:hover {
 }
 
 #resources .news-content {
-	position: absolute;
-	left: 68px;
+	position: relative;
+	padding-left: 68px;
 	font-family: "Calibri Light";
 	color: rgb(174, 168, 193);
 	font-size: 14px;
