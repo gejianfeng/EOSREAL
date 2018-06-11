@@ -1123,3 +1123,80 @@ a:hover {
 	top: 0px;
 	right: 0px;
 }
+
+/* voter stylesheet */
+#voter {
+	height: 859px;
+	position: relative;
+}
+
+/* votersite stylesheet */
+#votersite {
+	position: relative;
+	background-color: rgb(238, 242, 246)
+}
+
+#votersite .wrap {
+	width: 1823px;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+
+#votersite .line {
+	background-color: rgb(210, 210, 210);
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: 0px;
+}
+
+#votersite .title-container {
+	height: 96px;
+	width: 100%;
+	position: relative;
+}
+
+#votersite .cell-container {
+	height: 76px;
+	width: 100%;
+	position: relative;
+}
+
+#votersite .title1 {
+	position: absolute;
+	left: 20px;
+	top: 50px;
+	font-family: "Calibri Regular";
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#votersite .title2 {
+	position: absolute;
+	left: 865px;
+	top: 50px;
+	font-family: "Calibri Regular";
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#votersite .celltext1 {
+	position: absolute;
+	left: 20px;
+	top: 30px;
+	font-family: "Calibri Regular";
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+}
+
+#votersite .celltext2 {
+	position: absolute;
+	left: 865px;
+	top: 30px;
+	font-family: "Calibri Regular";
+	color: rgb(0, 0, 0);
+	font-size: 16px;
+}
