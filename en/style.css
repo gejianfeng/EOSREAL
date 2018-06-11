@@ -1126,7 +1126,171 @@ a:hover {
 
 /* voter stylesheet */
 #voter {
-	height: 859px;
+	position: relative;
+	background-color: rgb(238, 242, 246);
+}
+
+#voter .wrap {
+	width: 1823px;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+
+#voter .title-container {
+	width: 100%;
+	height: 278px;
+	position: relative;
+}
+
+#voter .title1 {
+	position: absolute;
+	left: 525px;
+	top: 124px;
+	font-family: "Calibri Regular";
+	color: rgb(0, 0, 0);
+	font-size: 36px;
+	font-weight: bold;
+}
+
+#voter .title-line {
+	background-color: rgb(210, 210, 210);
+	width: 1px;
+	height: 190px;
+	position: absolute;
+	top: 45px;
+	left: 765px;
+}
+
+#voter .title2 {
+	position: absolute;
+	left: 800px;
+	top: 54px;
+	font-family: "Calibri Regular";
+	color: rgb(102, 102, 102);
+	font-size: 15px;
+	text-align: left;
+	line-height: 2;
+}
+
+#voter .title-button {
+	width: 170px;
+	height: 50px;
+	background-image: url(assets/image/05/button_vote.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: 800px;
+	top: 180px;
+	font-family: "Calibri Regular";
+	color: rgb(255, 255, 255);
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 22px;
+	text-align: center;
+	cursor: pointer;
+}
+
+#voter .search-container {
+	width: 100%;
+	height: 60px;
+	position: relative;
+	background-color: rgb(255, 255, 255);
+	border-radius: 15px;
+}
+
+#voter .search-title {
+	font-family: "Calibri Regular";
+	color: rgb(102, 102, 102);
+	font-size: 18px;
+	position: absolute;
+	top: 20px;
+	left: 24px;
+}
+
+#voter .search-icon {
+	background-image: url(assets/image/05/icon_search.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 23px;
+	height: 23px;
+	top: 20px;
+	right: 32px;
+}
+
+#voter .context-container {
+	width: 100%;
+	position: relative;
+	background-color: rgb(255, 255, 255);
+	border-radius: 15px;
+	margin-top: 15px;
+}
+
+#voter .context-title-container {
+	width: 100%;
+	height: 75px;
+	position: relative;
+}
+
+#voter .context-title {
+	font-family: "Calibri Regular";
+	color: rgb(0, 0, 0);
+	font-size: 24px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	top: 30px;
+	font-weight: bold;
+}
+
+#voter .context-title-line {
+	background-color: rgb(210, 210, 210);
+	width: 1773px;
+	height: 1px;
+	position: absolute;
+	bottom: 0px;
+	left: 25px;
+}
+
+#voter .context-sub-title-container {
+	width: 100%;
+	height: 62px;
+	position: relative;
+}
+
+#voter .context-sub-title {
+	font-family: "Calibri Regular";
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	position: absolute;
+	text-align: left;
+	top: 25px;
+	font-weight: bold;
+}
+
+#voter .dynamic-container {
+	position: relative;
+	margin-bottom: 10px;
+	margin-left: 25px;
+	width: 1773px;
+	height: 72px;
+	border-radius: 15px;
+	background-color: rgb(238, 242, 246);
+}
+
+#voter .dynamic-text {
+	font-family: "Calibri Regular";
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+	position: absolute;
+	text-align: left;
+	top: 26px;
+}
+
+#voter .placeholder {
+	width: 100%;
+	height: 30px;
 	position: relative;
 }
 
