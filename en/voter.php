@@ -73,13 +73,13 @@ Template Name: voter.php
 
 <?php
 	$path = get_theme_root();
-	$path .= "/EOSREAL/producers.json";
-	$myfile = fopen($path, "r") or die("");
+	$path .= "/EOSREAL/producers1.json";
+	$myfile = fopen($path, "r") or die("fail to read file");
 	$data = fread($myfile,filesize($path));
 	fclose($myfile);
 
 	$jo = json_decode($data);
-
+	
 	echo "var data = JSON.parse('" . json_encode($jo) . "');";
 ?>
 
