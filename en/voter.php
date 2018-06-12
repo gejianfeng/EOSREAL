@@ -33,7 +33,7 @@ Template Name: voter.php
 				<div class="title-container">
 					<div class="title1">EOS Voter</div>
 					<div class="title-line"></div>
-					<div class="title2">目前连接到**eos主网**网络。<br/>链ID=aca 376f 206b 8fc 25a 6ed 44dbdc 66547c 36c 363c 33a 119ffbef 943642f 0e906。<br/><span id="total_voter"></span>eos投票支持启动该链 
+					<div class="title2">目前连接到**eos主网**网络。<br/>链ID=aca 376f 206b 8fc 25a 6ed 44dbdc 66547c 36c 363c 33a 119ffbef 943642f 0e906。<br/><span id="total_voter"></span>张票投票支持启动该链 
 					</div>
 					<div class="title-button" onclick="showVoterSite();">投票门户列表</div>
 				</div>
@@ -100,7 +100,8 @@ window.onload=function (){
 
 	var total = +data.total_producer_vote_weight;
 
-	var total_formatted = number_format(total, 0, '.', ',');
+	var total_show = total / 3719520000;
+	var total_formatted = number_format(total_show, 0, '.', ',');
 	$("#total_voter").html(total_formatted);
 
 	var count = data.rows.length;
@@ -114,8 +115,8 @@ window.onload=function (){
 		var url = o.url;
 		var val = +o.total_votes;
 		var val1 = val / 3719520000;
-		val1 = val1.toFixed(2);
-		val1 += 'M';
+		val1 = val1.toFixed(0);
+		var val1_formatted = number_format(val1, 0, '.', ',');
 		var val2 = val / total * 100;
 		val2 = val2.toFixed(2);
 		val2 = val2.toString() + "%";
@@ -123,7 +124,7 @@ window.onload=function (){
 		htmlCode += "<div class='dynamic-container'>";
 		htmlCode += "<div class='dynamic-text' style='left: 26px;'>" + idx + "</div>";
 		htmlCode += "<div class='dynamic-text' style='left: 185px;'>" + name + "</div>";
-		htmlCode += "<div class='dynamic-text' style='left: 835px;'>" + "<span style='color: rgb(198, 125, 11);'>" + val1 + "</span> " + val2 + "</div>";
+		htmlCode += "<div class='dynamic-text' style='left: 835px;'>" + "<span style='color: rgb(198, 125, 11);'>" + val1_formatted + "</span> " + val2 + "</div>";
 		//htmlCode += "<div class='dynamic-text' style='left: 1185px;'>KR</div>";
 		htmlCode += "<div class='dynamic-text' style='left: 1380px;'>" + url + "</div>";
 		htmlCode += "</div>";

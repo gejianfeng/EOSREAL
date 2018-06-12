@@ -109,20 +109,24 @@ a:hover {
 	background-position: center;
 }
 
-#banner .event {
+#banner .voter {
 	right: 20px;
 }
 
-#banner .team {
+#banner .event {
 	right: 190px;
 }
 
-#banner .resources {
+#banner .team {
 	right: 360px;
 }
 
-#banner .updates {
+#banner .resources {
 	right: 530px;
+}
+
+#banner .updates {
+	right: 700px;
 }
 
 /* index.php stylesheet */
