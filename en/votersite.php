@@ -38,55 +38,55 @@ Template Name: votersite.php
 
 				<div class="cell-container">
 					<div class="celltext1">EOS.PRODUCER.VOTE</div>
-					<div class="celltext2">http://eos.producer.vote/</div>
+					<div class="celltext2"><a href="http://eos.producer.vote/">http://eos.producer.vote/</a></div>
 					<div class="line"></div>
 				</div>
 
 				<div class="cell-container">
 					<div class="celltext1">EOSeoul's Voting Portal</div>
-					<div class="celltext2">http://vote.eostat.io</div>
+					<div class="celltext2"><a href="http://vote.eostat.io">http://vote.eostat.io</a></div>
 					<div class="line"></div>
 				</div>
 
 				<div class="cell-container">
 					<div class="celltext1">EOSphere Voting Portal</div>
-					<div class="celltext2">https://eosvoter.eosphere.io/</div>
+					<div class="celltext2"><a href="https://eosvoter.eosphere.io/">https://eosvoter.eosphere.io/</a></div>
 					<div class="line"></div>
 				</div>
 
 				<div class="cell-container">
 					<div class="celltext1">Liberty Block's Voting Portal</div>
-					<div class="celltext2">http://vote.libertyblock.io</div>
+					<div class="celltext2"><a href="http://vote.libertyblock.io">http://vote.libertyblock.io</a></div>
 					<div class="line"></div>
 				</div>
 
 				<div class="cell-container">
 					<div class="celltext1">Liquid EOS's Voting Portal (from Bancor)</div>
-					<div class="celltext2">http://vote.liquideos.com</div>
+					<div class="celltext2"><a href="http://vote.liquideos.com">http://vote.liquideos.com</a></div>
 					<div class="line"></div>
 				</div>
 
 				<div class="cell-container">
 					<div class="celltext1">Pomelo (wallet+voting) by MEET.ONE,EOSIO.SG, EOS Cannon, EOS Nation</div>
-					<div class="celltext2">http://meet.one/pomelo</div>
+					<div class="celltext2"><a href="http://meet.one/pomelo">http://meet.one/pomelo</a></div>
 					<div class="line"></div>
 				</div>
 
 				<div class="cell-container">
 					<div class="celltext1">Bitfinex Voting Portal</div>
-					<div class="celltext2">https://support.bitfinex.com/hc/en-us/articles/360005324573-EOS-Block-Producer-Ballot</div>
+					<div class="celltext2"><a href="https://support.bitfinex.com/hc/en-us/articles/360005324573-EOS-Block-Producer-Ballot">https://support.bitfinex.com/hc/en-us/articles/360005324573-EOS-Block-Producer-Ballot</a></div>
 					<div class="line"></div>
 				</div>
 
 				<div class="cell-container">
 					<div class="celltext1">Greymass Wallet &amp; Voting Portal</div>
-					<div class="celltext2">https://github.com/greymass/eos-voter/blob/master/README.md</div>
+					<div class="celltext2"><a href="https://github.com/greymass/eos-voter/blob/master/README.md">https://github.com/greymass/eos-voter/blob/master/README.md</a></div>
 					<div class="line"></div>
 				</div>
 
 				<div class="cell-container">
 					<div class="celltext1">EOS Canada's Wallet and Voting (command line voting tool and wallet)</div>
-					<div class="celltext2">https://www.eoscanada.com/en/tools/eosc</div>
+					<div class="celltext2"><a href="https://www.eoscanada.com/en/tools/eosc">https://www.eoscanada.com/en/tools/eosc</a></div>
 					<div class="line"></div>
 				</div>
 
