@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: voterus.php
+Template Name: voteus.php
  */
 ?>
 
