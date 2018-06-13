@@ -81,9 +81,20 @@ var language = 0;
 var total_producer_vote_weight = 0;
 
 var template1 = [
-	"本浏览器由EOSREAL(eosrealbpcsg)开发。EOSREAL是EOS治理方面的重要贡献者。我们拥有多文化背景、高专业水平，并且认同去中心化的价值理念。<br/>现在已经有{0}个EOS代币进行了投票。<br/>参与投票代币数量需达到150,000,000个方能正式启动超级节点竞选机制，确认当选的21个超级节点。<br/>目前的投票代币数量达到了启动要求数量的{1}%。<br/>每一个EOS代币最多可投出30张选票，目前已进行投票的EOS代币共投出{2}张选票，平均每个EOS代币选择支持{3}个超级节点。",
-	"This voter monitor is developed by EOSREAL(eosrealbpcsg). EOSREAL is a key contributor to EOS governance. We are multicultural, professional and appreciate the value of decentralization.<br/>Currently, {0} EOS tokens have voted. <br/>The BP voting mechanism will be formally initated to elect 21 BPs when 150,000,000 EOS tokens have voted.<br/>Current voting EOS tokens have reached {1}% of tokens needed for initiation.<br/>Each EOS token can vote for no more than 30 BPCs. The EOS tokens voted have altogether give out {2} votes, and each EOS token on average now votes {3} BPCs.",
-	"본 투표 모니터는 EOSREAL(eosrealbpcsg)가 개발했습니다. EOSREAL는 EOS 가버넌스에 중요한 공헌을 바쳤습니다. 우리는 다문화, 전문적이며 decentralization의 가치를 지지합니다.<br/>지금까지 이미 {0}개 EOS 토컨이 투표에 참여했습니다.<br/>투표에 참여한 토컨이 150,000,000개에 도달해야  블록프로듀서 경선 메커니즘을 정식으로 시작하고 당첨된 21개 블록프로듀서를 확인할 수 있습니다."
+	"本浏览器由EOSREAL(eosrealbpcsg)开发。EOSREAL是EOS治理方面的重要贡献者。我们拥有多文化背景、高专业水平，并且认同去中心化的价值理念。<br/>" +
+    "现在已经有{0}个EOS代币进行了投票。<br/>" +
+    "参与投票代币数量需达到150,000,000个方能正式启动超级节点竞选机制，确认当选的21个超级节点。<br/>" +
+    "目前的投票代币数量达到了启动要求数量的{1}%。<br/>" +
+    "每一个EOS代币最多可投出30张选票，目前已进行投票的EOS代币共投出{2}张选票，平均每个EOS代币选择支持{3}个超级节点。",
+	"This voter monitor is developed by EOSREAL(eosrealbpcsg). EOSREAL is a key contributor to EOS governance. We are multicultural, professional and appreciate the value of decentralization.<br/>" +
+    "Currently, {0} EOS tokens have voted. <br/>" +
+    "The BP voting mechanism will be formally initated to elect 21 BPs when 150,000,000 EOS tokens have voted.<br/>" +
+    "Current voting EOS tokens have reached {1}% of tokens needed for initiation.<br/>" +
+    "Each EOS token can vote for no more than 30 BPCs. The EOS tokens voted have altogether give out {2} votes, and each EOS token on average now votes {3} BPCs.",
+	"본 투표 모니터는 EOSREAL(eosrealbpcsg)가 개발했습니다. EOSREAL는 EOS 가버넌스에 중요한 공헌을 바쳤습니다. 우리는 다문화, 전문적이며 decentralization의 가치를 지지합니다.<br/>" +
+    "지금까지 이미 {0}개 EOS 토컨이 투표에 참여했습니다.<br/>" +
+    "투표에 참여한 토컨이 150,000,000개에 도달해야  블록프로듀서 경선 메커니즘을 정식으로 시작하고 당첨된 21개 블록프로듀서를 확인할 수 있습니다.</br>" +
+    "지금까지 투표한 토컨은 목표의 {1}% 도달했습니다. <br/>"
 ];
 
 var text1 = [
@@ -166,11 +177,12 @@ window.onload=function () {
 		{
 			if (inputVal == '')
 			{
-				showList(data.rows);
+				showList(data.rows, null);
 			}
 			else
 			{
 				var list = [];
+				var idList = [];
 
 				for (var i = 0; i < data.rows.length; ++i)
 				{
@@ -179,10 +191,11 @@ window.onload=function () {
 					if (o.owner.indexOf(inputVal) != -1)
 					{
 						list.push(o);
+						idList.push((i + 1) < 10 ? "0" + (i + 1) : i.toString());
 					}
 				}
 
-				showList(list);
+				showList(list, idList);
 			}
 
 		}
@@ -196,24 +209,24 @@ window.onload=function () {
 
 		var val1 = number_format(producers_total, 0, '.', ',');
 		
-		var val2 = producers_total / 150000000;
+		var val2 = producers_total / 150000000 * 100;
 		val2 = val2.toFixed(0);
 		val2 = number_format(val2, 2, '.', ',');
 
 		var val3 = total_producer_vote_weight / 3719520000;
 		val3 = number_format(val3, 0, '.', ',');
 
-		var val4 = total_producer_vote_weight / 3719520000 / 150000000;
-		val4 = val4.toFixed(0);
-		val4 = number_format(val4, 0, '.', ',');
+		var val4 = total_producer_vote_weight / 3719520000 / producers_total;
+		val4 = val4.toFixed(2);
+		val4 = number_format(val4, 2, '.', ',');
 
 		text1.push(template1[0].format(val1, val2, val3, val4));
 		text1.push(template1[1].format(val1, val2, val3, val4));
-		text1.push(template1[2].format(val1));
+		text1.push(template1[2].format(val1, val2));
 
 		reloadText1();
 
-		showList(data.rows);
+		showList(data.rows, null);
 	}
 }
 
@@ -273,14 +286,24 @@ function number_format(number, decimals, dec_point, thousands_sep)
     return s.join(dec);
 }
 
-function showList(list)
+function showList(list, idList)
 {
 	var count = list.length;
 
 	var htmlCode = "";
 
 	for (var i = 0; i < count; ++i) {
-		var idx = (i + 1) < 10 ? "0" + (i + 1) : i.toString();
+		var idx = null;
+
+		if (idList == null)
+		{
+			idx = (i + 1) < 10 ? "0" + (i + 1) : i.toString();
+		}
+		else
+		{
+			idx = idList[i];
+		}
+
 		var o = list[i];
 		var name = o.owner;
 		var url = o.url;
