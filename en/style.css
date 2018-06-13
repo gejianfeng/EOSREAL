@@ -58,6 +58,39 @@ a:hover {
 	position: relative;
 }
 
+/* voteus-banner stylesheet */
+.voteus-banner-container {
+	max-width: 1920px;
+	height: 118px;
+	margin: 0px auto;
+	background-color: rgb(13, 45, 56);
+}
+
+#voteus-banner {
+	height: 118px;
+	background-color: rgb(13, 45, 56);
+	max-width: 1920px;
+	min-width: 1280px;
+	width: 100%;
+	position: relative;
+	z-index: 4;
+	transition: all 300ms ease-in-out;
+	margin:0 auto;
+}
+
+#voteus-banner .voteus-logo {
+	background-image: url(assets/image/06/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 163px;
+	height: 42px;
+	top: 36px;
+	left: 75px;
+	cursor: pointer;
+}
+
+
 /* banner stylesheet */
 .banner-container {
 	max-width: 1920px;
@@ -445,6 +478,71 @@ a:hover {
 	width: 100%;
 	font-family: "Calibri Regular";
 	color: rgb(149, 146, 157);
+	font-size: 14px;
+	top: 105px;
+	right: 25px;
+	position: absolute;
+}
+
+/* footer stylesheet */
+#voteus-footer {
+	height: 200px;
+	background-color: rgb(45, 62, 82);
+	max-width: 1920px;
+	position: relative;
+	margin: 0px auto;
+}
+
+#voteus-footer .hype-line-icon {
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 23px;
+	height: 27px;
+	cursor: pointer;
+	top: 90px;
+}
+
+#voteus-footer .link1 {
+	left: 25px;
+	background-image: url(assets/image/01/button_steemit_unpressed.png);
+}
+
+#voteus-footer .link2 {
+	left: 85px;
+	background-image: url(assets/image/01/icon1.png);
+}
+
+#voteus-footer .link3 {
+	left: 145px;
+	background-image: url(assets/image/01/icon2.png);
+}
+
+#voteus-footer .link4 {
+	left: 205px;
+	background-image: url(assets/image/01/icon3.png);
+}
+
+#voteus-footer .link5 {
+	left: 265px;
+	background-image: url(assets/image/01/icon4.png);
+}
+
+#voteus-footer .logo {
+	text-align: center;
+	width: 100%;
+	font-family: "Calibri Regular";
+	color: rgb(168, 186, 193);
+	font-size: 90px;
+	top: 45px;
+	position: absolute;
+}
+
+#voteus-footer .right-text {
+	text-align: right;
+	width: 100%;
+	font-family: "Calibri Regular";
+	color: rgb(117, 134, 154);
 	font-size: 14px;
 	top: 105px;
 	right: 25px;
@@ -1388,4 +1486,49 @@ a:hover {
 	font-family: "Calibri Regular";
 	color: rgb(0, 0, 0);
 	font-size: 16px;
+}
+
+/* voteus stylesheet */
+#voteus {
+	position: relative;
+}
+
+#voteus .logo {
+	background-image: url(assets/image/06/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: 163px;
+	height: 42px;
+	top: 36px;
+	right: 75px;
+	cursor: pointer;
+}
+
+#voteus .background {
+	background-image: url(assets/image/06/banner_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: visible;
+	height: 840px;
+	position: relative;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#voteus .bg-title-text {
+	font-family: "Calibri Regular";
+	letter-spacing: 3px;
+}
+
+#voteus .vote-button {
+	background-image: url(assets/image/06/vote_bg.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 89px;
+	width: 267px; 
+	position: absolute;
+	text-align: center;
+	top: 715px;
+	left: 506px;
 }
