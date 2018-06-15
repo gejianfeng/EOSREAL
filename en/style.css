@@ -1506,11 +1506,12 @@ a:hover {
 }
 
 #voteus .background {
-	background-image: url(assets/image/06/banner_bg.jpg);
+	background-image: url(assets/image/06/0614_2.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: 1920px 600px;
 	overflow: visible;
-	height: 840px;
+	height: 600px;
 	position: relative;
 	margin: 0px auto;
 	text-align: center;
@@ -1525,10 +1526,34 @@ a:hover {
 	background-image: url(assets/image/06/vote_bg.png);
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 89px;
-	width: 267px; 
+	background-size: 185px 50px;
+	height: 50px;
+	width: 185px; 
 	position: absolute;
 	text-align: center;
-	top: 715px;
-	left: 506px;
+	top: 500px;
+	left: 547px;
+}
+
+#voteus .custom {
+	position: relative;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#voteus .section {
+	position: relative;
+}
+
+#voteus .section-title {
+	float: left;
+	width: 36%;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+#voteus .section-content {
+	float: right;
+	width: 58%;
+	text-align: left;
 }
